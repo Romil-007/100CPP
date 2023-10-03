@@ -4,6 +4,7 @@
 using namespace std;
 
 int main(){
+    srand((int) time(NULL));
     int n , q;
     int random , randomq;
 
@@ -43,7 +44,7 @@ label:
             
             rerun:
             
-            srand((int) time(NULL));
+            
             random = (rand() % n-1)+2;
             
             
@@ -62,7 +63,7 @@ label:
 
             for(int i = 1 ; i <= totalq ; i++){
                 another:
-                    srand((int) time(NULL));
+                    
                     randomq = (rand() % q-1)+1;
                 if(que[randomq] == 0){
                     goto another;
